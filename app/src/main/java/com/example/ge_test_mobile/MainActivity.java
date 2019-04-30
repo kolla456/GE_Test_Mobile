@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent= new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://github.com/login/oauth/authorize"+"?client_id"+clientId+"&redirect_url"+redirectUri));
+                Uri.parse("https://github.com/login/oauth/authorize"+"?client_id="+clientId+"&scope=repo&redirect_url="+redirectUri));
         startActivity(intent);
     }
     @Override

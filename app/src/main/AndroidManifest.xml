@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
                     android:host="callback"
-                    android:scheme="gemobiletest" />
+                    android:scheme="gemobiletest"
+                    android:pathPattern=".*"/>
             </intent-filter>
         </activity>
     </application>
